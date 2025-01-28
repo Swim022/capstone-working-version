@@ -79,7 +79,7 @@ export const getDashboardInformation = async (req, res) => {
       values: [userId, start_Date, end_Date],
     });
 
-    //   organise data
+    //   organize data
 
     const data = new Array(12).fill().map((_, index) => {
       const monthData = result.rows.filter(
